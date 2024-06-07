@@ -1,13 +1,11 @@
 import React from "react";
 import { getComponent } from "./registry";
-import './registerComponents';
+import { registeredComponents } from "./registerComponents";
 
 const App: React.FC = () => {
-  const components = ["Header", "Button"];
-
   return (
     <div className="App">
-      {components?.map((componentName) => {
+      {registeredComponents?.map((componentName) => {
         const componentData = getComponent(componentName);
         return componentData ? (
           <div className="button-container" key={componentName}>
