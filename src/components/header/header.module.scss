@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.header {
+  background-color: #ba55d3;
+  color: $white;
+  padding: 20px;
+}
+
+.title {
+  margin: 0;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
